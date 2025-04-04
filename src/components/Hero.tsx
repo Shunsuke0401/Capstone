@@ -14,7 +14,22 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+        <div className="text-center max-w-4xl mx-auto">
+          <h1 className={`text-4xl md:text-6xl lg:text-7xl font-bold mb-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            Hey, I'm <span className="highlight-text">Shunsuke Nakatani</span>
+          </h1>
+          
+          <h2 className={`text-xl md:text-2xl font-light mb-8 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Showcasing my journey of passion, growth and creation during my Brentwood years</h2>
+          
+          <div className={`flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <Button size="lg" className="rounded-full">
+              View My Work
+            </Button>
+            <Button variant="outline" size="lg" className="rounded-full">
+              Get in Touch
+            </Button>
+          </div>
+        </div>
       </div>
       
       <a href="#about" className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-blue-600 dark:text-blue-400 animate-bounce" aria-label="Scroll down">
