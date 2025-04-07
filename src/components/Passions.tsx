@@ -8,22 +8,22 @@ const Passions = () => {
     {
       icon: Code,
       title: 'Technology & Innovation',
-      description: 'I'm fascinated by the ways technology can solve real-world problems and create meaningful experiences. I enjoy exploring new tools and frameworks to build creative solutions.'
+      description: "I'm fascinated by the ways technology can solve real-world problems and create meaningful experiences. I enjoy exploring new tools and frameworks to build creative solutions."
     },
     {
       icon: Video,
       title: 'Digital Storytelling',
-      description: 'Creating compelling narratives through video editing and digital content is one of my favorite creative outlets. I love how visual stories can communicate complex ideas and emotions.'
+      description: "Creating compelling narratives through video editing and digital content is one of my favorite creative outlets. I love how visual stories can communicate complex ideas and emotions."
     },
     {
       icon: Lightbulb,
       title: 'Entrepreneurship',
-      description: 'Building something from nothing and seeing ideas come to life energizes me. I'm drawn to the process of identifying opportunities and developing innovative solutions.'
+      description: "Building something from nothing and seeing ideas come to life energizes me. I'm drawn to the process of identifying opportunities and developing innovative solutions."
     },
     {
       icon: Heart,
       title: 'Rugby & Team Sports',
-      description: 'Beyond the digital world, I find joy in physical activity and team sports, especially rugby. The camaraderie and strategic elements parallel many of the collaborative aspects I love in my professional work.'
+      description: "Beyond the digital world, I find joy in physical activity and team sports, especially rugby. The camaraderie and strategic elements parallel many of the collaborative aspects I love in my professional work."
     }
   ];
 
