@@ -2,6 +2,7 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Brain } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const About = () => {
   return <section id="about" className="py-20 bg-white dark:bg-gray-900">
@@ -13,9 +14,11 @@ const About = () => {
             <div className="animate-fade-in">
               <div className="relative">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-blue-600 to-teal-500 shadow-xl">
-                  <div className="absolute inset-2 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center">
-                    <p className="text-lg font-medium text-center px-4">Your Profile Image Here</p>
-                  </div>
+                  <img 
+                    src="/lovable-uploads/21d6e9a9-a797-41f6-86d8-e2571940c6fc.png" 
+                    alt="Shunsuke Nakatani"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-amber-400 rounded-full opacity-80 blur-xl"></div>
               </div>
