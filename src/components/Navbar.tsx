@@ -1,9 +1,12 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -12,27 +15,40 @@ const Navbar = () => {
         setIsScrolled(false);
       }
     };
+    
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  const navLinks = [{
-    name: 'Home',
-    href: '#home'
-  }, {
-    name: 'About',
-    href: '#about'
-  }, {
-    name: 'Journey',
-    href: '#journey'
-  }, {
-    name: 'Projects',
-    href: '#projects'
-  }, {
-    name: 'Contact',
-    href: '#contact'
-  }];
+  
+  const navLinks = [
+    {
+      name: 'Home',
+      href: '#home'
+    }, 
+    {
+      name: 'About',
+      href: '#about'
+    }, 
+    {
+      name: 'Journey',
+      href: '#journey'
+    },
+    {
+      name: 'Passions',
+      href: '#passions'
+    },
+    {
+      name: 'Reflections',
+      href: '#reflections'
+    },
+    {
+      name: 'Future',
+      href: '#future'
+    }
+  ];
+  
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -68,4 +84,5 @@ const Navbar = () => {
         </div>}
     </header>;
 };
+
 export default Navbar;
