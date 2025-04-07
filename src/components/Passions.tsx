@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Code, Rugby, Rocket, Users } from 'lucide-react';
+import { Code, Ball, Rocket, Users } from 'lucide-react';
 
 const Passions = () => {
   const passions = [
@@ -12,7 +12,7 @@ const Passions = () => {
       description: "I'm passionate about using technology to create impact, especially through blockchain. It's more than just code or finance — it's a tool to empower underrepresented voices. I entered the NFT space when I was just a teenager, and since then, I've been building projects that support diverse artists and challenge the status quo. Technology is where I can turn ideas into action."
     },
     {
-      icon: Rugby,
+      icon: Ball,
       title: 'Sports (Rugby and Soccer)',
       emoji: '🏉',
       description: "Rugby and soccer have shaped who I am. They've taught me about teamwork, discipline, and pushing through limits. Whether I'm in a rugby scrum or chasing the ball on the soccer field, I learn how to lead, trust others, and keep growing. Sports also give me balance — they keep me grounded, sharp, and focused, even when life gets intense."
