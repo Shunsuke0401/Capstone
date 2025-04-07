@@ -1,32 +1,44 @@
 
 import React from 'react';
-import { BookOpen, Award, Briefcase, GraduationCap } from 'lucide-react';
+import { Flower, Plane, Waves, Rocket, Mic, Briefcase } from 'lucide-react';
 
 const Journey = () => {
   const journeyItems = [
     {
-      icon: BookOpen,
-      title: 'Started Learning',
-      date: '2019',
-      description: 'Began my journey in [your field] by learning the fundamentals through online courses and self-study.'
+      icon: Flower,
+      title: '2007 – Beginnings',
+      emoji: '🌸',
+      description: 'April 1st – Born in Osaka, Japan around 4 PM, under the cherry blossoms. A spring beginning full of potential.'
     },
     {
-      icon: GraduationCap,
-      title: 'Formal Education',
-      date: '2020',
-      description: 'Completed my [degree/certification] in [field], enhancing my theoretical foundation.'
+      icon: Plane,
+      title: '2021 – A New Chapter',
+      emoji: '✈️',
+      description: 'Moved from Tokyo to Canada to study at Brentwood College School. Entered the blockchain world, buying my first NFT — the start of my tech journey.'
+    },
+    {
+      icon: Waves,
+      title: '2022 – Overcoming Struggles',
+      emoji: '🌊',
+      description: 'Faced challenges with English, but kept pushing. Saw major improvements in my language skills and confidence.'
+    },
+    {
+      icon: Rocket,
+      title: '2023 – Growth & Connection',
+      emoji: '🚀',
+      description: 'My grades improved in Grade 10. Found a mentor through the NFT community. Became deeply immersed in the NFT world — learning by doing.'
+    },
+    {
+      icon: Mic,
+      title: '2024 – Sharing Your Voice',
+      emoji: '🎤',
+      description: 'Gave a TED Talk on NFTs, inspiring others and making digital art fun again. Took leadership roles and continued building Iris DAO.'
     },
     {
       icon: Briefcase,
-      title: 'First Project',
-      date: '2021',
-      description: 'Worked on my first major project, where I [accomplished something significant] and learned valuable practical skills.'
-    },
-    {
-      icon: Award,
-      title: 'Achievement',
-      date: '2022',
-      description: 'Recognized for [your achievement or milestone], which validated my growth and expertise in the field.'
+      title: '2025 – Looking Ahead',
+      emoji: '💼',
+      description: 'At Career Day, had meaningful conversations with professionals in the crypto and tech industries. Gained valuable insights for my future path.'
     }
   ];
 
@@ -34,7 +46,7 @@ const Journey = () => {
     <section id="journey" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="section-heading text-center mb-16">My Learning Journey</h2>
+          <h2 className="section-heading text-center mb-16">My Life Journey</h2>
           
           <div className="relative">
             {/* Timeline line */}
@@ -57,9 +69,11 @@ const Journey = () => {
                       <div className={`md:hidden p-2 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400`}>
                         <item.icon size={16} />
                       </div>
-                      <h3 className="text-xl font-bold">{item.title}</h3>
+                      <h3 className="text-xl font-bold flex items-center gap-2">
+                        <span className="md:hidden">{item.emoji}</span>
+                        {item.title}
+                      </h3>
                     </div>
-                    <p className="text-sm text-blue-600 dark:text-blue-400 mb-2">{item.date}</p>
                     <p className="text-gray-600 dark:text-gray-400">{item.description}</p>
                   </div>
                 </div>
@@ -67,7 +81,7 @@ const Journey = () => {
                 {/* Icon for desktop */}
                 <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
                   <div className="w-12 h-12 rounded-full bg-blue-600 dark:bg-blue-500 flex items-center justify-center z-10">
-                    <item.icon className="w-6 h-6 text-white" />
+                    <span className="text-lg">{item.emoji}</span>
                   </div>
                 </div>
                 
