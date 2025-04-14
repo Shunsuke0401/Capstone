@@ -26,11 +26,11 @@ const About = () => {
             
             <div className="animate-slide-in-right">
               <h3 className="text-2xl font-bold mb-4">Who I Am</h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-4">Hi, I'm Shunsuke — a passionate individual dedicated to continuous growth and learning. With a background in entrepreneurship, digital art, and technology, I've developed a unique perspective that helps me approach challenges with creativity and purpose.
+              <p className="text-gray-700 dark:text-gray-300 mb-4">Hi, I'm Shunsuke — a Grade 12 student from Ellis House at Brentwood College School. I'm someone who really enjoys learning and trying new things. I have a background in entrepreneurship, digital art, and technology, which helps me see challenges in creative and meaningful ways.
 
-My journey has been driven by curiosity and a desire to create meaningful work that leaves a positive impact. I believe in the power of inclusivity and innovation, and I aim to bring those values into everything I do.
+At the beginning of Grade 9, I became interested in blockchain technology. Since then, I've fallen in love with it and have been working on projects outside of school almost every day. I've also attended many conferences and had the chance to speak at a few of them.
 
-When I'm not exploring new ideas or working on projects, you can find me on the rugby field, editing videos, or enjoying deep conversations with people who inspire me.</p>
+When I'm not working on new ideas or building something, you'll probably find me playing rugby, editing videos, or having deep conversations with people who inspire me.</p>
             </div>
           </div>
         </div>
