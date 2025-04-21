@@ -1,33 +1,28 @@
 
 import React from 'react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Code, Rocket } from 'lucide-react';
+import { Card } from '@/components/ui/card';
 
 const Passions = () => {
   const passions = [
     {
-      icon: Code,
       title: 'Technology (Blockchain)',
-      emoji: '💻',
-      description: "I'm passionate about using technology to create impact, especially through blockchain. It's more than just code or finance — it's a tool to empower underrepresented voices. I entered the NFT space when I was just a teenager, and since then, I've been building projects that support diverse artists and challenge the status quo. Technology is where I can turn ideas into action."
+      image: '/lovable-uploads/808541bf-2da7-4d98-a1ca-70851a47fc48.png',
+      alt: 'Speaking at NFT conference'
     },
     {
-      icon: Code, // Using Code icon as a fallback since Ball isn't available
       title: 'Sports (Rugby and Soccer)',
-      emoji: '🏉',
-      description: "Rugby and soccer have shaped who I am. They've taught me about teamwork, discipline, and pushing through limits. Whether I'm in a rugby scrum or chasing the ball on the soccer field, I learn how to lead, trust others, and keep growing. Sports also give me balance — they keep me grounded, sharp, and focused, even when life gets intense."
+      image: '/lovable-uploads/374fefa5-27e8-4487-9c32-bbf068ccfb19.png',
+      alt: 'Playing rugby at Brentwood'
     },
     {
-      icon: Rocket,
-      title: 'Entrepreneurship (Starting My Own Company)',
-      emoji: '🚀',
-      description: "I started my first company because I saw problems and wanted to be part of the solution. Entrepreneurship gives me the freedom to build what matters — from creating a DAO to launching NFT collections with meaning. It's not always easy, especially being young, but every challenge pushes me to grow faster and think bigger."
+      title: 'Entrepreneurship',
+      image: '/lovable-uploads/af064761-2c30-4780-b62f-62b035286628.png',
+      alt: 'At VeeCon conference'
     },
     {
-      icon: Code, // Using Code icon as a fallback since Users isn't available
-      title: 'Having Fun with Friends at Boarding School',
-      emoji: '🎉',
-      description: "Living in a boarding school has been one of the most fun and meaningful parts of my life. Late-night talks, dorm pranks, shared meals — it's where I've built lifelong friendships. These moments remind me that success isn't just about working hard — it's also about enjoying the ride with the people around me."
+      title: 'Having Fun with Friends',
+      image: '/lovable-uploads/cb7404ed-628b-4c83-83e1-895d3402dfc4.png',
+      alt: 'With rugby team at Brentwood'
     }
   ];
 
@@ -39,15 +34,17 @@ const Passions = () => {
           
           <div className="grid md:grid-cols-2 gap-6">
             {passions.map((passion, index) => (
-              <Card key={index} className="animate-fade-in border-none shadow-lg hover:shadow-xl transition-shadow">
-                <CardContent className="p-6 flex flex-col items-center text-center">
-                  <div className="w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mb-4">
-                    <div className="text-2xl">{passion.emoji}</div>
-                    <passion.icon className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+              <Card key={index} className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow">
+                <div className="relative aspect-[4/3]">
+                  <img
+                    src={passion.image}
+                    alt={passion.alt}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h4 className="text-xl font-bold text-white">{passion.title}</h4>
                   </div>
-                  <h4 className="text-xl font-bold mb-2">{passion.title}</h4>
-                  <p className="text-gray-600 dark:text-gray-400">{passion.description}</p>
-                </CardContent>
+                </div>
               </Card>
             ))}
           </div>
@@ -58,3 +55,4 @@ const Passions = () => {
 };
 
 export default Passions;
+
