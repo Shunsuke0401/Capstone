@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card } from '@/components/ui/card';
 
@@ -6,7 +5,7 @@ const Passions = () => {
   const passions = [
     {
       title: 'Technology (Blockchain)',
-      image: '/lovable-uploads/808541bf-2da7-4d98-a1ca-70851a47fc48.png',
+      image: '/lovable-uploads/d2e23ab6-2cfb-468e-a7e0-78b8c6a4c82c.png',
       alt: 'Speaking at NFT conference'
     },
     {
@@ -55,4 +54,3 @@ const Passions = () => {
 };
 
 export default Passions;
-
