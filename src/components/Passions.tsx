@@ -6,7 +6,7 @@ const Passions = () => {
   const passions = [
     {
       title: 'Technology (Blockchain)',
-      image: '/lovable-uploads/d6142e1e-bdb3-4b1e-a0ba-52ef060aafab.png',
+      image: '/lovable-uploads/bbbca9c6-13c3-46ae-a9b0-9d03bbefbbaf.png',
       alt: 'Speaking at NFT conference'
     },
     {
@@ -55,3 +55,4 @@ const Passions = () => {
 };
 
 export default Passions;
+
