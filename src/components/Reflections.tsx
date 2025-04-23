@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { BookOpen, Star, Bookmark } from 'lucide-react';
+import { BookOpen, Star } from 'lucide-react';
 
 const Reflections = () => {
   const reflections = [
@@ -14,11 +14,6 @@ const Reflections = () => {
       title: "The Power of Community",
       content: "I've discovered that meaningful progress rarely happens in isolation. Collaborating with diverse communities has expanded my perspective and enriched my work in countless ways.",
       icon: Star
-    },
-    {
-      title: "Embracing the Journey",
-      content: "I've learned that growth isn't linear and success isn't a destination. By embracing the process and staying curious, I've found joy in continuous evolution rather than focusing solely on outcomes.",
-      icon: Bookmark
     }
   ];
 
@@ -55,3 +50,4 @@ const Reflections = () => {
 };
 
 export default Reflections;
+
