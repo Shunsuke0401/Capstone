@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card } from '@/components/ui/card';
 
@@ -5,7 +6,7 @@ const Passions = () => {
   const passions = [
     {
       title: 'Technology (Blockchain)',
-      image: '/lovable-uploads/d2e23ab6-2cfb-468e-a7e0-78b8c6a4c82c.png',
+      image: '/lovable-uploads/d6142e1e-bdb3-4b1e-a0ba-52ef060aafab.png',
       alt: 'Speaking at NFT conference'
     },
     {
