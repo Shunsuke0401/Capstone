@@ -6,7 +6,7 @@ const Passions = () => {
   const passions = [
     {
       title: 'Technology (Blockchain)',
-      image: '/lovable-uploads/bbbca9c6-13c3-46ae-a9b0-9d03bbefbbaf.png',
+      image: 'https://raw.githubusercontent.com/Shunsuke0401/img/refs/heads/main/git.png',
       alt: 'Speaking at NFT conference'
     },
     {
