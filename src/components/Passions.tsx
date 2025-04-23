@@ -11,17 +11,17 @@ const Passions = () => {
     },
     {
       title: 'Sports (Rugby and Soccer)',
-      image: '/lovable-uploads/374fefa5-27e8-4487-9c32-bbf068ccfb19.png',
+      image: 'https://raw.githubusercontent.com/Shunsuke0401/img/refs/heads/main/1f715b02-36a8-488e-be8a-e3663f0657f0.png',
       alt: 'Playing rugby at Brentwood'
     },
     {
       title: 'Entrepreneurship',
-      image: '/lovable-uploads/af064761-2c30-4780-b62f-62b035286628.png',
+      image: 'https://raw.githubusercontent.com/Shunsuke0401/img/refs/heads/main/49d918bc-a2c0-47db-81a4-1b60d0df97db.png',
       alt: 'At VeeCon conference'
     },
     {
       title: 'Having Fun with Friends',
-      image: '/lovable-uploads/cb7404ed-628b-4c83-83e1-895d3402dfc4.png',
+      image: 'https://raw.githubusercontent.com/Shunsuke0401/img/refs/heads/main/e4442e61-4d12-4975-9818-d8ef351b4b12.png',
       alt: 'With rugby team at Brentwood'
     }
   ];
